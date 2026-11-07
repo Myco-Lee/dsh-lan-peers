@@ -1,7 +1,7 @@
 {
   "name": "dsh-lan-peers",
-  "version": "0.2.0",
-  "description": "DSH LAN peer discovery: UDP broadcast announce + HTTP message channel + agent tools so LAN nodes find each other and talk without configuring peers by hand.",
+  "version": "0.3.0",
+  "description": "DSH LAN peer discovery and pairing: UDP broadcast announce, one-time pairing codes, X25519 key agreement, signed + AES-256-GCM encrypted messaging, and agent tools so LAN nodes find each other and talk safely.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -24,6 +24,8 @@
     "plugin",
     "lan",
     "discovery",
+    "pairing",
+    "encryption",
     "a2a"
   ],
   "author": "Myco-Lee",
