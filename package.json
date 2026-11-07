@@ -1,0 +1,44 @@
+{
+  "name": "dsh-lan-peers",
+  "version": "0.2.0",
+  "description": "DSH LAN peer discovery: UDP broadcast announce + HTTP message channel + agent tools so LAN nodes find each other and talk without configuring peers by hand.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin",
+    "lan",
+    "discovery",
+    "a2a"
+  ],
+  "author": "Myco-Lee",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myco-Lee/dsh-lan-peers.git"
+  },
+  "homepage": "https://github.com/Myco-Lee/dsh-lan-peers#readme",
+  "bugs": {
+    "url": "https://github.com/Myco-Lee/dsh-lan-peers/issues"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
